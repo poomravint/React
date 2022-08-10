@@ -15,11 +15,12 @@ const buttonRefresh = () =>
 function App() {
 return (
         
-        <div>
-            
-            <marquee direction="left">{word}</marquee>
-            <WordCard value={word}/>
-            <button className = 'button' onClick={buttonRefresh}>new game</button>
+         <div className = 'box'>
+            <div className='background'>
+                <marquee direction="left">{word}</marquee>
+                <WordCard value={word}/>
+                <button className = 'button' onClick={buttonRefresh}>new game</button>
+            </div>
         </div>
     
     );

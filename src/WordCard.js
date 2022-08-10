@@ -16,6 +16,7 @@ const prepareStateFromWord = (given_word) => {
 
 }
 
+
 export default function WordCard(props){
     
     const [state, setState] = useState(prepareStateFromWord(props.value))
@@ -32,6 +33,7 @@ export default function WordCard(props){
     }else{
         console.log('reset')
         setState({...state, guess: '', attempt: state.attempt + 1})
+
         }
     }
  }
