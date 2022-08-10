@@ -7,6 +7,10 @@ import WordCard from './WordCard';
 var words = ['Hello', 'Sawasdee']
 var word = words[Math.floor(Math.random()*words.length)];
 
+const buttonRefresh = () =>
+{
+    window.location.reload();
+}
 
 function App() {
 return (
@@ -14,6 +18,11 @@ return (
         <div>
             <marquee direction="left">{word}</marquee>
             <WordCard value={word}/>
+            <button className = 'button' onClick={buttonRefresh}>new game
+            <style>
+            
+            </style>
+                </button>
         </div>
     
     );
