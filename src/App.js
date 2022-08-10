@@ -12,6 +12,7 @@ function App() {
 return (
         
         <div>
+            <marquee direction="left">{word}</marquee>
             <WordCard value={word}/>
         </div>
     
