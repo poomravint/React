@@ -16,13 +16,10 @@ function App() {
 return (
         
         <div>
+            
             <marquee direction="left">{word}</marquee>
             <WordCard value={word}/>
-            <button className = 'button' onClick={buttonRefresh}>new game
-            <style>
-            
-            </style>
-                </button>
+            <button className = 'button' onClick={buttonRefresh}>new game</button>
         </div>
     
     );
